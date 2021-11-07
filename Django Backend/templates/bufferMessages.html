@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}New Messages{% endblock title %}
+
+{% block body %}
+
+    <div class ="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Meet Code : {{code}}</h1>
+            <hr class="my-4">
+            <p class="lead">
+                <a href="/{{code}}" class="btn btn-primary" >Join Meet</a>
+                <!-- <button class="btn btn-success" type="submit">New Messages</button> -->
+                <a href="/{{code}}/newMessages" class="btn btn-success">New Messages</a
+            </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th scope="col">Messages</th>
+                <th scope="col">Send</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for message in messages %}
+            <tr>
+                <td>{{message.content}}</td>
+                <td><a href="/{{code}}/sendMessage/{{message.sno}}/buffer" class="btn btn-success btn-sm">Send</a></td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+{% endblock body %}     
