@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>QnA</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      /* Modal Structure */
+
+      html,
+      body {
+        font-size: 14px;
+        margin: 0;
+        min-height: 180px;
+        padding: 0;
+        width: 384px;
+      }
+
+      .fa {
+        cursor: pointer;
+        user-select: none;
+      }
+
+      .fa:hover {
+        color: darkblue;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="modal-header">
+      <h3 class="logo">Meet Id : <span id="id">N/A</span></h3>
+    </div>
+    <div class="container">
+      <h1 class="text-center">Enter your question</h1>
+      <form id="myForm" method="post" action="http://localhost:8000/">
+        <div class="form-group">
+          <label for="content">Question</label>
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              id="content"
+              name="content"
+              placeholder="How to get started with CP"
+            />
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
