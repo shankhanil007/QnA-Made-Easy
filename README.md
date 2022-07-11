@@ -27,7 +27,7 @@ Our backend was made with **Django** and **Bootstrap** was used for frontend sty
 
 
 ## How it works
-![workflow](https://i.ibb.co/KVTF58b/UB-hacking-2.png)
+<img src="https://i.ibb.co/KVTF58b/UB-hacking-2.png" width="500">
 
 ## Accomplishments that we're proud of
 Going solo is never easy and I am proud of what I accomplished in 24 hours. This is the first time I built a Chrome Extension. Additionally, I figured out a way to use Selenium for sending messages from Django Backend to the Google Meet's chat section in real-time. 
