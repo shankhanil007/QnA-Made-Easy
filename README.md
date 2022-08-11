@@ -1,4 +1,4 @@
-# QnA-Made-Easy
+# Q&A-Made-Easy
 
 ## Inspiration
 - Every online presentation, speech, or class is accompanied by a Q&A session in the end. In meetings with huge participation, the speaker is bombarded with questions. 
